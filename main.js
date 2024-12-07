@@ -4,15 +4,16 @@ function calcLetters(word) {
 
         for (let i = 0; i < word.length; i++) {
             const letter = word[i];
-    
-            let counter = 1;
-    
+
             if (result[letter]) {
-                counter++
+                result[letter]++;
+            } else {
+                result[letter] = 1;
             }
-    
-            result[letter] = counter;
+
+            console.log(result);
         }
+        
     
         console.log(result);
     } else {
